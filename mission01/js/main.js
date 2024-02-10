@@ -27,11 +27,11 @@ const idField = document.querySelector("#userEmail");
 const pwField = document.querySelector("#userPassword");
 const submit = document.querySelector(".btn-login");
 
-let idInput = "";
-let pwInput = "";
+// let idInput = "";
+// let pwInput = "";
 
 function handleCheckId() {
-  idInput = this.value;
+  const idInput = this.value;
   if (emailReg(this.value) || this.value === "") {
     //console.log("success");
     idField.classList.remove("is--invalid");
@@ -42,7 +42,7 @@ function handleCheckId() {
 }
 
 function handleCheckPw() {
-  pwInput = this.value;
+  const pwInput = this.value;
   if (pwReg(this.value) || this.value === "") {
     // console.log("성공");
     pwField.classList.remove("is--invalid");
